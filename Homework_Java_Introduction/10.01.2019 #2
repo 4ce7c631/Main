@@ -14,13 +14,13 @@ public class Main {
         System.out.println(" ");
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите сторону a");
-        double a = sc.nextInt();
+        double a = sc.nextDouble();
         System.out.println("Введите сторону b");
-        double b = sc.nextInt();
+        double b = sc.nextDouble();
         System.out.println("Введите сторону c");
-        double c = sc.nextInt();
+        double c = sc.nextDouble();
         System.out.println("Введите массу груза");
-        double m = sc.nextInt();
+        double m = sc.nextDouble();
         System.out.println(isRight(a, b, c, m));
         }
 
