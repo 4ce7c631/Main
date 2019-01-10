@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("=====================================================================================================");
+        System.out.println(" [WEB] https://github.com/4ce7c631");
+        System.out.println("=====================================================================================================");
+        System.out.println("      ______  ________  ______  ________ ________________");
+        System.out.println("     /  __  \\/   ____/ /  __  \\/    ___//   ____// ______\\");
+        System.out.println("    /  / /  /  ___/   /  / /  /\\____  \\/  ___/  / /");
+        System.out.println("   /  /_/  /  /_____ /  /_/  /_____/  /  /_____/ \\_______");
+        System.out.println("  /_______/________//_______//_______/________/\\________/");
+        System.out.println(" ");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите длину машины:");
+        double length = sc.nextDouble();
+        System.out.println("Введите ширину машины:");
+        double width = sc.nextDouble();
+        System.out.println("Введите высоту машины:");
+        double height = sc.nextDouble();
+        auto(length, width, height);
+    }
+
+    static void auto(double length, double width, double height) {
+        double length0 = 10;
+        double width0 = 2.5;
+        double height0 = 4;
+        double a = length0 / length;
+        double b = width0 / width;
+        a = Math.floor(a);
+        b = Math.floor(b);
+        if (a >= 1 && b >= 1 && height <= height0) {
+            double c = a * b;
+            System.out.println("В контейнер влазит " + c + " машин");
+
+        }
+        else
+            System.out.println("Влазит 0 машин");
+    }
+}
