@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("===============================================================================================================================================================");
+        System.out.println(" [WEB] https://github.com/4ce7c631");
+        System.out.println("===============================================================================================================================================================");
+        System.out.println("      ______  ________  ______  ________ ________________");
+        System.out.println("     /  __  \\/   ____/ /  __  \\/    ___//   ____// ______\\");
+        System.out.println("    /  / /  /  ___/   /  / /  /\\____  \\/  ___/  / /");
+        System.out.println("   /  /_/  /  /_____ /  /_/  /_____/  /  /_____/ \\_______");
+        System.out.println("  /_______/________//_______//_______/________/\\________/");
+        System.out.println(" ");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите первую сумму");
+        int a = sc.nextInt();
+        result(a);
+    }
+
+    static void result(int a) {
+        int day = 1;
+        while (a < 1000000) {
+            System.out.println(day + " день: " + a + " гривен");
+            day++;
+            a = a * 3;
+        }
+        System.out.println("Ваш контракт закончиться через " + (day - 1) + " дней");
+    }
+}
