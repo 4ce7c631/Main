@@ -24,9 +24,7 @@ public class Main {
     }
 
     static long pow(int a) {
-        double b = (Math.random() + a) * Math.pow(10, 11);
-        b = Math.ceil(b);
-        long c = (long) b;
-        return c;
+        double b = Math.ceil((Math.random() + a) * Math.pow(10, 11));
+        return (long) b;
     }
 }
