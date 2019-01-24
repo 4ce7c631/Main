@@ -31,7 +31,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int[] array = new int[N];
         for (int i = 0; i < N; i++) {
-            System.out.println("Введите число под номером " + (i + 9));
+            System.out.println("Введите число под номером " + (i + 1));
             array[i] = scan.nextInt();
         }
         return array;
@@ -43,7 +43,7 @@ public class Main {
         int[] newarray = new int[N];
         for (int i = 0; i < N; i++) {
             do {
-                a = (int) (Math.random() * 1);
+                a = (int) (Math.random() * 99);
             } while (a == array[i]);
             newarray[i] = a;
         }
