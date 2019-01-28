@@ -245,7 +245,7 @@ public class Main {
                     } while(array[i][j] < 1 || array[i][j] > 30);
                 } else {
                     do {
-                        System.out.println("Input is the seat taken (1), or empty (0) ");
+                        System.out.println("Input if " + j + "# seat is taken (1), or free (0) ");
                         array[i][j] = scan.nextInt();
                         if (array[i][j] < 0 || array[i][j] > 1) {
                             System.out.println("Wrong number");
